@@ -1,0 +1,45 @@
+body {
+    background-color: slategray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
+
+h1 {
+    color:rgb(42, 33, 158);;
+    font-size: 50px;
+    text-align: center;
+    border-style: solid dashed solid dashed;
+    border-color:rgb(32, 27, 100);
+    border-width: 2mm;
+}
+
+#caption {
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+}
+
+#beluga_picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-style: solid;
+    border-width: 3mm;
+    border-color: rgb(32, 27, 100);
+}
+
+#picture_caption {
+    display: block;
+    text-align: center;
+    font-size: 70px;
+    color: greenyellow;
+}
+
+.endangered {
+    color: rgb(248, 218, 83);
+}
+
+.extra_links {
+    color:rgb(204, 255, 255);
+}
