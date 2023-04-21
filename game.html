@@ -3,6 +3,7 @@
 
     <title>Beluga Whale Quiz</title>
     <link rel="stylesheet" href="css/game.css">
+    <link rel="icon" href="img/tab_icon.png">
 
 </head>
 
@@ -12,12 +13,35 @@
 
         <h1 id="title">BELUGAWHALE.COM - The Quiz</h1>
 
-        
+        <p id="quiz_desc">To test what you've learned from the article, here's a quiz to see what you know.</p>
 
-        <div id="start_quiz_button">
-            <button>Start Quiz</button>
+        <div id="start_quiz">
+            <button id="start_quiz_button">Start Quiz</button>
+        </div>
+
+        <div id="questions">
+            <span id="question"></span>
+        </div>
+
+        <div id="choice">
+            <p id="choice_result"></p>
+        </div>
+
+        <div id="answer_choices">
+
+            <button id="choice1" hidden="true">Choice 1</button>
+            <button id="choice2" hidden="true">Choice 2</button>
+            <button id="choice3" hidden="true">Choice 3</button>
+            <button id="choice4" hidden="true">Choice 4</button>
+
+        </div>
+
+        <div id="return">
+            <button id="return_button">Return to Home Page</button>
         </div>
         
+        <script src="js/game.js"></script>
+
     </body>
 
 </html>

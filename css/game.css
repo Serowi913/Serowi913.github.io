@@ -21,6 +21,7 @@
 body {
     background-image: url('../img/background.png');
     background-size: cover;
+    font-family: Fredoka;
 }
 
 #title {
@@ -35,12 +36,19 @@ body {
     border-radius: 15px;
 }
 
-#start_quiz_button {
+#quiz_desc {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    padding: 30px 0px 30px 0px;
+}
+
+#start_quiz {
     text-align: center;
 
 }
 
-#start_quiz_button button {
+#start_quiz_button {
     font-size: 45px;
     font-family: Fredoka;
 
@@ -51,3 +59,48 @@ body {
     border-color: rgba(57, 215, 215, 0.749);
     color: white;
 }
+
+#questions {
+    padding: 40px 0px 40px 0px;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+#choice_result {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+#answer_choices {
+    text-align: center;
+}
+
+#return {
+    text-align: center;
+}
+
+#return_button {
+    padding: 10px 20px 10px 20px;
+    font-size: 30px;
+    font-family: Fredoka;
+    border-radius: 15px;
+    border-width: 5px;
+    border-color: rgba(255, 255, 255, 0.5);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#answer_choices button {
+    margin: 40px 70px 40px 70px;
+    padding: 10px 20px 10px 20px;
+    font-size: 30px;
+    font-family: Fredoka;
+    border-radius: 15px;
+    border-width: 5px;
+    border-color: rgba(255, 255, 255, 0.5);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
