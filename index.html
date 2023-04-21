@@ -3,32 +3,27 @@
 
     <head>
 
+        <title>Cook Inlet Beluga Whales</title>
         <link rel="stylesheet" href="css/index.css">
+        <link rel="icon" href="img/tab_icon.png">
 
     </head>
 
-    <div id="main">
+    <body>
 
-        <body>
+        <script src="js/index.js"></script>
 
-            <script src="js/index.js"></script>
+        <h1 id="header">BELUGAWHALE.COM</h1>
 
-            <h1 id="header">BELUGAWHALE.COM</h1>
+        <p id="caption">"  The place for all of your beluga whale needs.   "</p>
 
-            <p id="caption">The place for all of your beluga whale needs.</p>
+        <img id="beluga_picture" src="img/beluga.jpg" height="300">
 
-            <br>
+        <a id="picture_caption" href="https://www.gettyimages.com/photos/beluga-whale" target="_blank">This is a Beluga Whale</a>
 
-            <img id="beluga_picture" src="img/beluga_whale_img">
-
-            <br>
-
-            <a id="picture_caption" href="https://www.gettyimages.com/photos/beluga-whale" target="_blank">This is a Beluga Whale</a>
-
-            <br><br>
-
-            <p style="color: rgb(164, 250, 34);"><b>Beluga Whale fun facts:</b></p>
-            <ul style="color: rgb(153, 255, 0);">
+        <div class="fun_facts">
+            <p id="fun_facts_subhead">Beluga Whale fun facts:</p>
+            <ul>
                 <li>A group of Beluga Whales is called a pod.</li>
                 <li>The average lifespan of Beluga Whales is 30 - 35 years.</li>
                 <li>The Beluga is closely related to the narwhal; they are the only two members of the Monodontidae family.</li>
@@ -39,34 +34,56 @@
                 <li>The Beluga can change the shape of its bulbous forehead, called a "melon",  by blowing air around its sinuses.</li>
                 <li>The vertebrae in a Beluga's neck is not fused together, giving it the unusual ability to turn its head up, down and side-to-side.</li>
             </ul>
+        </div>
 
-            <div class="endangered">
-                <br><p><b>However, a species of Beluga Whale is critically endangered.</b></p><br>
+        <div id="cook_inlet_on_map">
+            <img src="img/cook_inlet_on_map.png" height="390" alt="Cook Inlet - Relative to Alaska and Canada">
+            <p>Cook Inlet at red marker - <a target="_blank"
+            href="https://earth.google.com/web/@58.3563301,-137.33789377,-344.56942684a,3494566.20841026d,34.9999997y,17.11177059h,29.30402702t,360r/data=CjIaMBIqGWISLuQRNk5AIeuM74vL-GLAKhY2MC40MjI0MjEsIC0xNTEuNzc0ODQ3GAEgAQ">Map Data: Google Earth</a></p>
+        </div>
+
+        <div class="endangered">
+            <p id="endangered_subhead"">However, a species of Beluga Whale is critically endangered.</p>
+            <div id="endangered_text">
                 <p>In January of 2020, the National Oceanic and Atmospheric Administration, Fisheries reported that only 279 Beluga Whales remained in the Cook Inlet of Alaska.</p>
                 <p>That's down from 1,300 in 1979 - an 80% decrease!</p>
                 <p>It's important to protect all species of life on Earth, as their vitality to the functions of our planet may be unnoticable, but they are not irrelevant.</p>
-                <br>
             </div>
-            
-            <p style="color: rgb(204, 255, 255)"><b>For more information, you can visit these links:</b></p>
+        </div>
 
-            <div class="extra_links">
+
+        <div class="extra_links">
+            <h2 style="color: rgb(204, 255, 255); text-align: center;">For more information, you can visit these links:</h2>
+            <div id="extra_links_text">
                 <ul>
                     <li>
-                        <p style="text-indent: 40px;"><a href="https://www.fisheries.noaa.gov/species/beluga-whale#conservation-management" target="_blank">
+                        <p><a class="extra_links_a" href="https://www.fisheries.noaa.gov/species/beluga-whale#conservation-management" target="_blank">
                         NOAA's Plan</a> for the Beluga Whales
                         </p>
                     </li>
                     <li>
-                        <p style="text-indent: 40px;">A <a href="https://www.fisheries.noaa.gov/alaska/help-belugas" target="_blank">direct guide</a> for YOU to help the Beluga Whales</p>
+                        <p>A <a class="extra_links_a" href="https://www.fisheries.noaa.gov/alaska/help-belugas" target="_blank">direct guide</a> for YOU to help the Beluga Whales</p>
+                    </li>
+                    <li>
+                        <p>How to <a class="extra_links_a" href="https://www.cookinletbelugas.com/cibw-sightings" target="_blank">report</a> a sighting of a Cook Inlet Beluga Whale</p>
                     </li>
                 </ul>
             </div>
+        </div>
+        
+        <a id="game_page_link" style="color:rgb(204, 255, 255);" target="_blank" href="game.html" onclick="gameLinkClicked()">click me to go to other page</a>
 
-            <a id="game_page_link" target="_blank" href="game.html" onclick="gameLinkClicked()">click me to go to other page</a>
+        <div id="source">
 
-        </body>
+            <a class="sources" href="https://easyscienceforkids.com/beluga-whale/#:~:text=1%20Beluga%20whales%20are%20gray%20or%20brown%20when,Beluga%20whales%20are%20very%20social.%20...%20More%20items" target="_blank">Fun Facts Source</a>
 
-    </div>
+            <a class="sources" href="https://pixabay.com/photos/white-dolphin-mammal-dolphin-1057362/" target="_blank">Beluga Whale Image</a>
+            
+            <p>This article is under the GNDFL License.</p>
+
+        </div>
+
+
+    </body>
 
 </html>

@@ -1,45 +1,145 @@
+@font-face {
+    font-family: RussoOne;
+    src: url('../fonts/RussoOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: Vidaloka;
+    src: url('../fonts/Vidaloka-Regular.ttf');
+}
+
+@font-face {
+    font-family: AveriaGruesa;
+    src: url('../fonts/AveriaGruesaLibre-Regular.ttf');
+}
+
+@font-face {
+    font-family: Fredoka;
+    src: url('../fonts/Fredoka-VariableFont_wdth,wght.ttf');
+}
+
 body {
     background-color: slategray;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Fredoka;
     font-size: 25px;
+    background-image: url('../img/background.png');
+    background-size: cover;
 }
 
 h1 {
-    color:rgb(42, 33, 158);;
+    color:rgb(42, 33, 158);
+    background-color: #c1ffff;
     font-size: 50px;
+    font-family: Vidaloka;
     text-align: center;
-    border-style: solid dashed solid dashed;
+    border-style: ridge solid ridge solid;
     border-color:rgb(32, 27, 100);
     border-width: 2mm;
+    border-radius: 15px;
 }
 
 #caption {
     font-size: 25px;
     font-style: italic;
+    color:  whitesmoke;
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 #beluga_picture {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    border-style: solid;
+    width: auto;
+    border-style: ridge;
     border-width: 3mm;
     border-color: rgb(32, 27, 100);
+    border-radius: 10px;
+    margin-right: 15px;
+    float: right;
 }
 
 #picture_caption {
     display: block;
+    margin: 65px 0px 85px 0px;
     text-align: center;
-    font-size: 70px;
-    color: greenyellow;
+    font-size: 50px;
+    color: #fdb6ff;
+}
+
+.fun_facts {
+    color: rgb(195 255 255);
+    border-style: solid;
+    border-width: 6px;
+    border-radius: 25px;
+    border-color: rgb(255 111 111 / 38%);
+    padding-bottom: 40px;
+}
+
+#fun_facts_subhead {
+    color: rgb(55 243 255);
+    margin-left: 10px;
+}
+
+#cook_inlet_on_map {
+    margin-block-start: 45px;
+}
+
+#cook_inlet_on_map img {
+    border-style: solid;
+    border-color: white;
+    border-width: 4px;
+    border-radius: 12px;
+}
+
+#cook_inlet_on_map p, #cook_inlet_on_map a {
+    font-size: 15px;
+    font-style: italic;
+    color: gray;
 }
 
 .endangered {
-    color: rgb(248, 218, 83);
+    color: #f4e5ff;
+    font-family: AveriaGruesa;
+    border-width: 6px;
+    border-style: solid;
+    border-radius: 25px;
+    border-color: rgb(138 91 255 / 47%);
+    margin-block-start: 45px;
+}
+
+#endangered_subhead {
+    text-align: center;
+    color: hsl(29.51deg 100% 70.11%);
+}
+
+#endangered_text {
+    margin-left: 10px;
 }
 
 .extra_links {
     color:rgb(204, 255, 255);
+    margin: 50px 0px 50px 0px;
+}
+
+#extra_links_text {
+    text-indent: 40px;
+}
+
+.extra_links_a {
+    color: rgb(204, 255, 255);
+}
+
+#source {
+    margin-top: 20px;
+}
+
+#source p {
+    font-size: 20px;
+    font-style: italic;
+    color: grey;
+}
+
+.sources {
+    color: grey;
+    margin-right: 25px;
 }

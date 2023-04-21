@@ -1,0 +1,53 @@
+@font-face {
+    font-family: RussoOne;
+    src: url('../fonts/RussoOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: Vidaloka;
+    src: url('../fonts/Vidaloka-Regular.ttf');
+}
+
+@font-face {
+    font-family: AveriaGruesa;
+    src: url('../fonts/AveriaGruesaLibre-Regular.ttf');
+}
+
+@font-face {
+    font-family: Fredoka;
+    src: url('../fonts/Fredoka-VariableFont_wdth,wght.ttf');
+}
+
+body {
+    background-image: url('../img/background.png');
+    background-size: cover;
+}
+
+#title {
+    color:rgb(42, 33, 158);
+    background-color: #c1ffff;
+    font-size: 50px;
+    font-family: Vidaloka;
+    text-align: center;
+    border-style: ridge solid ridge solid;
+    border-color:rgb(32, 27, 100);
+    border-width: 2mm;
+    border-radius: 15px;
+}
+
+#start_quiz_button {
+    text-align: center;
+
+}
+
+#start_quiz_button button {
+    font-size: 45px;
+    font-family: Fredoka;
+
+    border-radius: 12px;
+    border-width: 6px;
+
+    background-color: rgba(112, 255, 255, 0.53);
+    border-color: rgba(57, 215, 215, 0.749);
+    color: white;
+}
