@@ -4,6 +4,8 @@ returnButton.addEventListener("click", () => {
     window.location.href = './index.html';
 })
 
+
+
 const quizDesc = document.getElementById("quiz_desc");
 const startQuizButton = document.getElementById("start_quiz_button");
 
@@ -13,6 +15,9 @@ const choiceResultText = document.getElementById("choice_result");
 
 const wrongChoiceMessage = "WRONG.";
 const rightChoiceMessage = "Correct!";
+
+const correctAnswerAudio = new Audio('./audio/quiz_correct_answer.wav');
+const wrongAnswerAudio = new Audio('./audio/quiz_wrong_answer.wav')
 
 const choiceButtons = [
     document.getElementById("choice1"),
@@ -122,6 +127,7 @@ function refreshQuiz() {
 function choosesChoice1() {
     if (quizQuestions[currentQuestion]["answer"] === "choice1") {
         reset()
+        correctAnswerAudio.play()
         choiceButtons[0].style.backgroundColor = "#00FF00";
         choiceResultText.innerHTML = rightChoiceMessage;
         choiceResultText.style.color = "rgb(200, 255, 200)";
@@ -131,6 +137,7 @@ function choosesChoice1() {
             refreshQuiz();
         },3000);
     } else {
+        wrongAnswerAudio.play()
         choiceButtons[0].style.backgroundColor = "rgba(255, 0, 0, 0.4)";
         choiceButtons[0].style.color = "rgba(255, 255, 255, 0.4)";
         choiceResultText.innerHTML = wrongChoiceMessage;
@@ -142,6 +149,7 @@ function choosesChoice1() {
 function choosesChoice2() {
     if (quizQuestions[currentQuestion]["answer"] === "choice2") {
         reset()
+        correctAnswerAudio.play()
         choiceButtons[1].style.backgroundColor = "#00FF00";
         choiceResultText.innerHTML = rightChoiceMessage;
         choiceResultText.style.color = "rgb(200, 255, 200)";
@@ -151,6 +159,7 @@ function choosesChoice2() {
             refreshQuiz();
         },3000);
     } else {
+        wrongAnswerAudio.play()
         choiceButtons[1].style.backgroundColor = "rgba(255, 0, 0, 0.4)";
         choiceButtons[1].style.color = "rgba(255, 255, 255, 0.4)";
         choiceResultText.innerHTML = wrongChoiceMessage;
@@ -162,6 +171,7 @@ function choosesChoice2() {
 function choosesChoice3() {
     if (quizQuestions[currentQuestion]["answer"] === "choice3") {
         reset()
+        correctAnswerAudio.play()
         choiceButtons[2].style.backgroundColor = "#00FF00";
         choiceResultText.innerHTML = rightChoiceMessage;
         choiceResultText.style.color = "rgb(200, 255, 200)";
@@ -171,6 +181,7 @@ function choosesChoice3() {
             refreshQuiz();
         },3000);
     } else {
+        wrongAnswerAudio.play()
         choiceButtons[2].style.backgroundColor = "rgba(255, 0, 0, 0.4)";
         choiceButtons[2].style.color = "rgba(255, 255, 255, 0.4)";
         choiceResultText.innerHTML = wrongChoiceMessage;
@@ -182,6 +193,7 @@ function choosesChoice3() {
 function choosesChoice4() {
     if (quizQuestions[currentQuestion]["answer"] === "choice4") {
         reset()
+        correctAnswerAudio.play()
         choiceButtons[3].style.backgroundColor = "#00FF00";
         choiceResultText.innerHTML = rightChoiceMessage;
         choiceResultText.style.color = "rgb(200, 255, 200)";
@@ -191,6 +203,7 @@ function choosesChoice4() {
             refreshQuiz();
         },3000);
     } else {
+        wrongAnswerAudio.play()
         choiceButtons[3].style.backgroundColor = "rgba(255, 0, 0, 0.4)";
         choiceButtons[3].style.color = "rgba(255, 255, 255, 0.4)";
         choiceResultText.innerHTML = wrongChoiceMessage;
@@ -205,4 +218,5 @@ function reset() {
         x.style.backgroundColor = "rgba(0, 0, 0, 0.4)";
         x.style.color = "rgb(255, 255, 255)";
     })
+
 }

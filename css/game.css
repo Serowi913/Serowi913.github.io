@@ -19,9 +19,15 @@
 }
 
 body {
-    background-image: url('../img/background.png');
+    background-image: url('../img/game_beluga_whale_bg.jfif');
     background-size: cover;
     font-family: Fredoka;
+}
+
+h1:hover {
+    background-color: transparent;
+    color: white;
+    font-style: italic;
 }
 
 #title {
