@@ -124,6 +124,12 @@ h1:hover {
 
 .extra_links {
     color:rgb(204, 255, 255);
+    background-color: rgb(0, 66, 97);
+    border-color: rgba(0, 101, 144, 0.429);
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 20px;
+    padding: 6px 0px 6px 0px;
     margin: 50px 0px 50px 0px;
 }
 
